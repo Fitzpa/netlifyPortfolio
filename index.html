@@ -44,6 +44,7 @@
           </a>
         </div>
       </section>
+      <!-- ///////////////////////////////////////////////////////////// -->
       <section id="about">
         <div class="projects">
           <div class="item">
@@ -113,20 +114,21 @@
           </div>
         </div>
       </section>
+      <!-- //////////////////////////////////////////////////////////////// -->
       <section id="aboutPageTwo">
         <div class="projects">
           <div class="item">
-            <a href="https://fitzpa.github.io/LouieGroupProject/">
-              <img src="assets/images/GroupAPI.jpg" alt="Api Project" />
+            <a href="https://quirky-poincare-874496.netlify.com/">
+              <img src="assets/images/GroupAPI.jpg" alt="Sequelize CRUD Project" />
             </a>
             <a
-              href="https://fitzpa.github.io/LouieGroupProject/"
+              href="https://quirky-poincare-874496.netlify.com/"
               class="btn-light"
             >
               <i class="fas fa-eye"></i>API + Firebase Project
             </a>
             <a
-              href="https://github.com/Fitzpa/LouieGroupProject"
+              href="https://github.com/Fitzpa/netlifyPortfolio"
               class="btn-dark"
             >
               <i class="fab fa-github"></i>Github
@@ -182,6 +184,7 @@
           </div>
         </div>
       </section>
+      <!-- ////////////////////////////////////////////////////////////////////// -->
       <section id="service">
         <h1>Service</h1>
         <p class="lead">
@@ -190,50 +193,61 @@
         </p>
       </section>
       <section id="contact">
-        <h1>Contact</h1>
-        <p class="lead">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi,
-          quis!
-        </p>
-        <form action="POST" data-netlify="true">
-          <div class="fields">
-            <div class="field half">
-              <input type="text" name="name" id="name" placeholder="Name" />
-            </div>
-            <div class="field half">
-              <input type="email" name="email" id="email" placeholder="Email" />
-            </div>
-            <div class="field">
-              <textarea
-                type="message"
-                name="message"
-                id="message"
-                placeholder="Message"
-                rows="7"
-              >
-              </textarea>
-            </div>
-            <div class="field">
-              <input
-                type="file"
-                name="myFile"
-                id="myFile"
-                placeholder="Upload File"
-                rows="7"
-              />
-            </div>
-            <div class="field"><div data-netlify-recaptcha="true"></div></div>
+        <div class="contact">
+          <div class="card">
+            <h1>Contact</h1>
+            <p class="lead contactHeader">
+              Let me know if you would like to work together!
+            </p>
+
+            <form class="contactForm" action="POST" data-netlify="true">
+              <div class="fields">
+                <div class="field half">
+                  <input type="text" name="name" id="name" placeholder="Name" />
+                </div>
+                <div class="field half">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="field">
+                  <textarea
+                    type="message"
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                    rows="7"
+                  >
+                  </textarea>
+                </div>
+                <div class="field">
+                  <input
+                    type="file"
+                    name="myFile"
+                    id="myFile"
+                    placeholder="Upload File"
+                    rows="7"
+                  />
+                </div>
+                <div class="field">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
+              </div>
+              <ul class="actions">
+                <li>
+                  <input
+                    type="submit"
+                    class="button primary"
+                    value="Send Message"
+                  />
+                </li>
+              </ul>
+            </form>
           </div>
-          <ul class="actions">
-            <li>
-              <input
-                type="submit"
-                class="button primary"
-                value="Send Message"
-              />
-            </li>
-          </ul>
-        </form>
+        </div>
       </section>
     </div>
   </body>
