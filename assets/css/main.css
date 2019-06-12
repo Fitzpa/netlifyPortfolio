@@ -59,6 +59,10 @@ input#myFile {
   margin: auto;
 }
 
+#robotCheck {
+  margin: auto;
+}
+
 .field,
 input,
 textarea,
