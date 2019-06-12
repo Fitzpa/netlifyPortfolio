@@ -1,0 +1,95 @@
+/* Mobile */
+@media screen and (max-width: 580px) {
+  .item-1 {
+    flex: 100%;
+  }
+  .item-2 {
+    flex: 100%;
+  }
+  .item-3 {
+    flex: 100%;
+  }
+  .item-4 {
+    flex: 100%;
+  }
+  .item-5 {
+    flex: 100%;
+  }
+  .item-6 {
+    flex: 100%;
+  }
+  .item-7 {
+    flex: 100%;
+  }
+  .item-8 {
+    flex: 100%;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 581px) and (max-width: 768px) {
+  .item-1 {
+    flex: 50%;
+  }
+  .item-2 {
+    flex: 50%;
+  }
+  .item-3 {
+    flex: 50%;
+  }
+  .item-4 {
+    flex: 50%;
+  }
+  .item-5 {
+    flex: 50%;
+  }
+  .item-6 {
+    flex: 50%;
+  }
+  .item-7 {
+    flex: 50%;
+  }
+  .item-8 {
+    flex: 50%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+  .item-1 {
+    
+    flex: 25%;
+    
+  }
+  .item-2 {
+    
+    flex: 25%;
+    
+  }
+  .item-3 {
+    
+    flex: 25%;
+    
+  }
+  .item-4 {
+    
+    flex: 25%;
+    
+  }
+  .item-5 {
+    
+    flex: 25%;
+  }
+  .item-6 {
+    
+    flex: 25%;
+  }
+  .item-7 {
+    flex: 25%;
+    
+  }
+  .item-8 {
+    
+    flex: 25%;
+  }
+}

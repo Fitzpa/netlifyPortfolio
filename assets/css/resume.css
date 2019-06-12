@@ -1,14 +1,73 @@
 .resumeHeader {
-    background-color: #363636;
-    color: #FCFCFC
+  margin-top: 70px;
+  background-color: #363636;
+  color: #fcfcfc;
+  grid-area: header;
+  padding: 10px;
 }
 
 .resumeBody1 {
-    background-color: #CDDFD3;
-    color: #363636;
+  background-color: #cddfd3;
+  color: #363636;
+  grid-area: left;
+  padding: 20px;
 }
 
 .resumeBody2 {
-    background-color: #FCFCFC;
-    color: #363636;
+  background-color: #fcfcfc;
+  color: #363636;
+  grid-area: right;
+  padding: 20px;
+}
+
+.resumeConactContainer {
+    padding: 5px;
+}
+.resumeSkills {
+    padding: 5px;
+}
+.resumeAbout {
+    padding: 10px;
+}
+.educationContainer {
+    padding: 10px;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .header {
+    flex: 100%;
+  }
+  .aside-1 {
+    flex: 100%;
+  }
+  .aside-2 {
+    flex: 100%;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .header {
+    flex: 100%;
+  }
+  .aside-1 {
+    flex: 30%;
+  }
+  .aside-2 {
+    flex: 70%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+  .header {
+    flex: 100%;
+  }
+  .aside-1 {
+    flex: 30%;
+  }
+  .aside-2 {
+    flex: 70%;
+  }
 }

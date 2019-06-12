@@ -16,18 +16,27 @@
       rel="stylesheet"
     />
     <title>Louie Fitzpatrick</title>
-    <link rel="stylesheet" href="assets/css/resume.css">
+    <link rel="stylesheet" href="assets/css/resume.css" />
+    <link rel="stylesheet" href="assets/css/work.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Work</a></li>
+        <li><a href="#service">Resumé</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <div class="container">
-      <nav class="navbar">
+      <!-- <nav class="navbar">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">Work</a></li>
-          <li><a href="#service">Resume</a></li>
+          <li><a href="#service">Resumé</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
+      </nav> -->
       <section id="home">
         <div class="titleContainer">
           <h1>Louie Fitzpatrick</h1>
@@ -46,12 +55,13 @@
           <a href="https://github.com/Fitzpa">
             <i class="fab fa-github fa-2x"></i>
           </a>
+          <button id="downloadButton" class="btn"><i class="fa fa-download"></i> Download Resumé</button>
         </div>
       </section>
       <!-- ///////////////////////////////////////////////////////////// -->
       <section id="about">
-        <div class="projects">
-          <div class="item">
+        <div class="projects wrapper">
+          <div class="item-1">
             <a href="https://fitzpa.github.io/LouieGroupProject/">
               <img src="assets/images/GroupAPI.jpg" alt="Api Project" />
             </a>
@@ -59,7 +69,7 @@
               href="https://fitzpa.github.io/LouieGroupProject/"
               class="btn-light"
             >
-              <i class="fas fa-eye"></i>API + Firebase Project
+              <i class="fas fa-eye"></i>API + Firebase
             </a>
             <a
               href="https://github.com/Fitzpa/LouieGroupProject"
@@ -69,7 +79,7 @@
             </a>
           </div>
 
-          <div class="item">
+          <div class="item-2">
             <a href="https://fitzpa.github.io/Giphy-API-Project/">
               <img src="assets/images/giphyProject2.jpg" alt="Project" />
             </a>
@@ -86,8 +96,7 @@
               <i class="fab fa-github"></i>Github
             </a>
           </div>
-
-          <div class="item">
+          <div class="item-3">
             <a href="https://fitzpa.github.io/TriviaGame/">
               <img src="assets/images/TriviaGame.jpg" alt="Project" />
             </a>
@@ -99,7 +108,7 @@
             </a>
           </div>
 
-          <div class="item">
+          <div class="item-4">
             <a href="https://fitzpa.github.io/Word-Guess-Game/">
               <img src="assets/images/NintendoHangman.jpg" alt="Project" />
             </a>
@@ -120,8 +129,8 @@
       </section>
       <!-- //////////////////////////////////////////////////////////////// -->
       <section id="aboutPageTwo">
-        <div class="projects">
-          <div class="item">
+        <div class="projects wrapper">
+          <div class="item-5">
             <a href="https://quirky-poincare-874496.netlify.com/">
               <img
                 src="assets/images/sevenVsevenSm.jpg"
@@ -132,7 +141,7 @@
               href="https://quirky-poincare-874496.netlify.com/"
               class="btn-light"
             >
-              <i class="fas fa-eye"></i>Sequelize CRUD Project
+              <i class="fas fa-eye"></i>Sequelize CRUD
             </a>
             <a
               href="https://github.com/Fitzpa/netlifyPortfolio"
@@ -142,7 +151,7 @@
             </a>
           </div>
 
-          <div class="item">
+          <div class="item-6">
             <a href="https://fitzpa.github.io/Giphy-API-Project/">
               <img src="assets/images/giphyProject2.jpg" alt="Project" />
             </a>
@@ -159,8 +168,7 @@
               <i class="fab fa-github"></i>Github
             </a>
           </div>
-
-          <div class="item">
+          <div class="item-7">
             <a href="https://fitzpa.github.io/TriviaGame/">
               <img src="assets/images/TriviaGame.jpg" alt="Project" />
             </a>
@@ -172,7 +180,7 @@
             </a>
           </div>
 
-          <div class="item">
+          <div class="item-8">
             <a href="https://fitzpa.github.io/Word-Guess-Game/">
               <img src="assets/images/NintendoHangman.jpg" alt="Project" />
             </a>
@@ -193,61 +201,77 @@
       </section>
       <!-- ////////////////////////////////////////////////////////////////////// -->
       <section id="service">
-        <div class="resumeHeader">
-          <h1>LOUIE FITZPATRICK</h1>
-          <h2>BACK-END WEB DEVELOPER</h2>
-        </div>
-        <div class="resumeBody1">
-          <div class="resumeConactContainer">
-            <p class="resumeParagraph">
-                Excelsior, MN 55331
-            </p>
-            <p class="resumeParagraph">
-                (651) 347-0116
-            </p>
-            <p class="resumeParagraph">
-                pd.louis.fitzpatrick@icloud.com
-            </p>
+        <div class="wrapper">
+          <div class="resumeHeader header">
+            <h1>LOUIE FITZPATRICK</h1>
+
+            <h2>BACK-END WEB DEVELOPER</h2>
           </div>
-        </div>
-        <div class="resumeBody2">
-          <p class="lead">
-            <h2>Skills</h2>
-            <ul> 
-              <li>Javascript - Jquery, Express.js, React.js, Node.js </li>
-              <li>NoSQL - Firebase, MongoDB</li>
-              <li>SQL - MySQL</li>
-              <li>Git</li>
-              <li>CSS3 - Bootstrap</li>
-              <li>HTML5</li>
-            </ul>
-            <h2>About</h2>
-            <ul>
-              <li>Experience collaborating and working on a team using Github and Slack
-              </li>
-              <li>Known as a self-starter, team player and multitasker--strive to
-                  consistently exceed expectations.
-              </li>
-              <li>
-                  Experience creating full-stack web applications using various technologies and APIs
-              </li>
-            </ul>
-          
+          <div class="resumeBody1 aside-1">
+            <div class="resumeSkills">
+              <h2>Skills</h2>
+              <ul>
+                <li>Javascript - Jquery, Express.js, React.js, Node.js</li>
+                <li>NoSQL - Firebase, MongoDB</li>
+                <li>SQL - MySQL</li>
+                <li>Git</li>
+                <li>CSS3 - Bootstrap</li>
+                <li>HTML5</li>
+              </ul>
+            </div>
+            <div class="resumeConactContainer">
+              <p>-----------------------------------------------</p>
+              <p class="resumeParagraph">
+                Excelsior, MN 55331
+              </p>
+              <p class="resumeParagraph">
+                (651) 347-0116
+              </p>
+              <p class="resumeParagraph">
+                pd.louis.fitzpatrick@icloud.com
+              </p>
+            </div>
+          </div>
+          <div class="resumeBody2 aside-2">
+            <div class="resumeAbout">
+              <h2>About</h2>
+              <ul>
+                <li>
+                  Experience collaborating and working on a team using Github
+                  and Slack
+                </li>
+                <li>
+                  Known as a self-starter, team player and multitasker--strive
+                  to consistently exceed expectations.
+                </li>
+                <li>
+                  Experience creating full-stack web applications using various
+                  technologies and APIs
+                </li>
+              </ul>
+            </div>
+
             <div class="educationContainer">
               <h2>Education</h2>
               <ul>
-                <li>January 2019 - July 2019
-                    University of Minnesota Coding Bootcamp, Mpls-St. Paul - Graduation
-                    Date: 7/11/19 Full-stack web development program. </li>
-                <li>August 2014 - December 2017
-                    2019 Minneapolis Community And Technical College, Mpls Majored in
-                    Math and completed the CS classes: - Intro to Computer Programming
-                    and Problem Solving with Python, - Object-Oriented Programming I</li>
-                <li>August 2011- May 2013 Augsburg College, Mpls - Changed Majors
-                    Psychology Major</li>
+                <li>
+                  January 2019 - July 2019 University of Minnesota Coding
+                  Bootcamp, Mpls-St. Paul - Graduation Date: 7/11/19 Full-stack
+                  web development program.
+                </li>
+                <li>
+                  August 2014 - December 2017 2019 Minneapolis Community And
+                  Technical College, Mpls Majored in Math and completed the CS
+                  classes: - Intro to Computer Programming and Problem Solving
+                  with Python, - Object-Oriented Programming I
+                </li>
+                <li>
+                  August 2011- May 2013 Augsburg College, Mpls - Changed Majors
+                  Psychology Major
+                </li>
               </ul>
-            </div> 
-          </p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- //////////////////////////////////////////////////////////////////////// -->
