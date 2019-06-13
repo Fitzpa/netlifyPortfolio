@@ -39,15 +39,15 @@
     flex: 100%;
   }
   .aside-1 {
-    flex: 100%;
+    flex: 30%;
   }
   .aside-2 {
-    flex: 100%;
+    flex: 70%;
   }
 }
 
 /* Tablets */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 641px) and (max-width: 768px) {
   .header {
     flex: 100%;
   }
