@@ -27,18 +27,22 @@
 }
 
 /* Tablets */
-@media screen and (min-width: 581px) and (max-width: 768px) {
+@media screen and (min-width: 581px) and (max-width: 1029px) {
   .item-1 {
     flex: 50%;
+    padding-right: 10px;
   }
   .item-2 {
     flex: 50%;
+    padding-left: 10px;
   }
   .item-3 {
     flex: 50%;
+    padding-right: 10px;
   }
   .item-4 {
     flex: 50%;
+    padding-left: 10px;
   }
   .item-5 {
     flex: 50%;
@@ -55,26 +59,26 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1030px) {
   .item-1 {
     
     flex: 25%;
-    
+    padding-right: 10px;
   }
   .item-2 {
     
     flex: 25%;
-    
+    padding: 0 10px;
   }
   .item-3 {
     
     flex: 25%;
-    
+    padding: 0 10px;
   }
   .item-4 {
     
     flex: 25%;
-    
+    padding-left: 10px;
   }
   .item-5 {
     
