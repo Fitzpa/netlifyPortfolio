@@ -2,15 +2,19 @@
 @media screen and (max-width: 580px) {
   .item-1 {
     flex: 100%;
+    padding: 10px 0;
   }
   .item-2 {
     flex: 100%;
+    padding: 10px 0;
   }
   .item-3 {
     flex: 100%;
+    padding: 10px 0;
   }
   .item-4 {
     flex: 100%;
+    padding: 10px 0;
   }
   .item-5 {
     flex: 100%;
