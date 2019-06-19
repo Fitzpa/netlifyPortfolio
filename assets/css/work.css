@@ -31,7 +31,7 @@
 }
 
 /* Tablets */
-@media screen and (min-width: 581px) and (max-width: 1029px) {
+@media screen and (min-width: 688px) and (max-width: 1029px) {
   .item-1 {
     flex: 50%;
     padding-right: 10px;

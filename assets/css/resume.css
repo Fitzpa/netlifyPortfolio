@@ -1,20 +1,20 @@
 .resumeHeader {
-  background-color: #363636;
+  background-color: #18212A;
   color: #fcfcfc;
   grid-area: header;
   padding: 10px;
 }
 
 .resumeBody1 {
-  background-color: #cddfd3;
-  color: #363636;
+  background-color: #3E968A;
+  color: #18212A;
   grid-area: left;
   padding: 32px 32px 64px 32px;
 }
 
 .resumeBody2 {
-  background-color: #fcfcfc;
-  color: #363636;
+  background-color: #4F5356;
+  color: rgb(221, 221, 221);
   grid-area: right;
   padding: 32px 32px 64px 32px;
 }
