@@ -94,6 +94,7 @@ hr {
   color: #fcfcfc;
   padding: 30px;
   width: 50%;
+  min-width: 358px;
   margin-right: auto;
   margin-bottom: 50px;
   position: relative;

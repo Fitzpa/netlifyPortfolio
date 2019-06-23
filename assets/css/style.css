@@ -53,6 +53,10 @@ li {
   border-radius: 50%;
   border: solid 3px #fff;
 }
+
+h3 {
+  min-height: 58px;
+}
 .wrapper {
   padding-bottom: 10px;
   width: 100%;
