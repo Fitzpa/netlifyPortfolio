@@ -286,6 +286,15 @@ h1 {
   img {
     max-width: 100%;
   }
+  
+  .items .item {
+    display: flex;
+    flex-direction: column;
+  }
+  .items{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Tablets */
@@ -315,6 +324,23 @@ h1 {
   img {
     max-width: 100%;
   }
+  .items .item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .items .item a{
+    width: 100%;
+  }
+  .items .item .btn {
+    width: 100%;
+  }
+  .items .item .item-btn {
+    width: 100%;
+  }
+  .items{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* Desktop */
@@ -325,6 +351,9 @@ h1 {
     margin: auto;
     padding-top: 10px;
     padding-bottom: 12px;
+  }
+  .navbar {
+    height: 200px;
   }
   .titleContainer {
     margin-top: 2em;
