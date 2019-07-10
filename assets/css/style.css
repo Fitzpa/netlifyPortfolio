@@ -324,19 +324,7 @@ h1 {
   img {
     max-width: 100%;
   }
-  .items .item {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .items .item a{
-    width: 100%;
-  }
-  .items .item .btn {
-    width: 100%;
-  }
-  .items .item .item-btn {
-    width: 100%;
-  }
+  
   .items{
     display: flex;
     flex-wrap: wrap;
@@ -374,5 +362,9 @@ h1 {
   .navbar ul li {
     margin: 0 2rem;
     padding: 1rem;
+  }
+  .items{
+    display: flex;
+    flex-wrap: wrap;
   }
 }
