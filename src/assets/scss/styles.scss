@@ -81,7 +81,7 @@ body {
     li {
       margin: 0 2rem;
       padding: 1rem;
-      list-style: square;
+      list-style: none;
       @media screen and (max-width: 806px) {
         margin: 0 0.5rem;
         padding: 0.5rem;
@@ -91,9 +91,12 @@ body {
       a {
         text-decoration: none;
         text-transform: uppercase;
+        transition: all 0.5s;
         color: $white;
         &:hover {
-          color: $light-blue;
+          color: $blue-green;
+          font-weight: bold;
+          letter-spacing: 0.2rem;
         }
       }
     }
@@ -237,6 +240,7 @@ main {
               }
             }
           }
+          }
           a {
             background-color: $dark-blue;
             color: $white;
@@ -252,6 +256,17 @@ main {
             justify-content: center;
             max-width: 250px;
             width: auto;
+            transition: all 0.5s;
+            &:hover {
+              color: $dark-blue;
+              background-color: $white;
+              letter-spacing: 0.2rem;
+              font-weight: bold;
+            }
+            &.btn-resume {
+              display: flex;
+              flex-direction: column;
+            }
 
             i {
               font-weight: 900;
@@ -505,9 +520,15 @@ main {
                 margin: 0;
                 background: $dark-blue;
                 color: $white;
+                transition: all 0.5s;
                 display: block;
                 padding: 0.5rem 1rem;
                 border: 0;
+                &:hover {
+                  color: $dark-blue;
+                  background: $white;
+                  font-weight: bold;
+                }
                 @media screen and (max-width: 687px) {
                   margin: auto;
                 }
@@ -542,7 +563,7 @@ main {
             transition: all 0.5s;
             color: $dark-blue;
             &:hover {
-              color: $light-blue;
+              color: $white;
             }
             @media screen and (max-width: 687px) {
               font-size: 0.8rem;
