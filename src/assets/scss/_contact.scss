@@ -84,14 +84,16 @@ section#contact {
     }
   }
   div.contact-information {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-width: 50%;
     height: 136px;
     margin: auto;
     color: $dark-blue;
     text-align: center;
     &-icons {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       display: flex;
       justify-content: space-evenly;
       a {
@@ -99,24 +101,77 @@ section#contact {
         text-decoration: none;
         transition: all 0.5s;
         color: $dark-blue;
+        .contactIcons {
+          transition: all 0.5s;
+          filter: invert(9%) sepia(38%) saturate(504%) hue-rotate(168deg)
+            brightness(97%) contrast(93%);
+
+          width: 3.2rem;
+          height: auto;
+        }
         &:hover {
           color: $white;
+          .contactIcons {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(157deg)
+              brightness(104%) contrast(103%);
+          }
         }
       }
     }
-    address {
-      display: block;
-      font-style: italic;
-      font-size: 1.5rem;
-      color: $dark-blue;
-      text-align: center;
-    }
-    a.resumeParagraph {
-      text-decoration: none;
-      font-size: 1.5rem;
-    }
-    p.resumeParagraph {
-      font-size: 1.5rem;
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      address {
+        padding: 0.5rem 0;
+        display: block;
+        font-style: italic;
+        font-size: 1.5rem;
+        color: $dark-blue;
+        text-align: center;
+      }
+      a.resumeParagraph {
+        padding: 0.5rem 0;
+        text-decoration: none;
+        font-size: 1.5rem;
+      }
+      a.mailBtnAnchor {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        height: 4rem;
+        .iconCircle {
+          display: flex;
+          justify-content: center;
+          background: $blue-green;
+          margin: auto;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          transition: all 0.5s;
+          .mailBtnIcon {
+            display: block;
+            width: 2rem;
+            height: auto;
+            margin: auto;
+            transition: all 0.5s;
+            filter: invert(9%) sepia(38%) saturate(504%) hue-rotate(168deg)
+              brightness(97%) contrast(93%);
+          }
+        }
+        &:hover {
+          .iconCircle {
+            background: $dark-blue;
+            width: 4rem;
+            height: 4rem;
+            .mailBtnIcon {
+              filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(157deg)
+                brightness(104%) contrast(103%);
+            }
+          }
+        }
+      }
     }
   }
 }
