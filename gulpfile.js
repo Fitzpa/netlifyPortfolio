@@ -32,7 +32,7 @@ function watch() {
   });
 
   gulp.watch('./src/assets/scss/**/*.scss', style);
-  // gulp.watch('./src/assets/css', styleCSS);
+  gulp.watch('./src/assets/css', styleCSS);
   gulp.watch('./src/*.html').on('change', browserSync.reload);
   gulp.watch('./src/assets/css').on('change', browserSync.reload);
   gulp.watch('./src/js/**/*.js').on('change', browserSync.reload);
@@ -40,5 +40,5 @@ function watch() {
 
 // Default Task
 exports.style = style;
-// exports.styleCSS = styleCSS;
+exports.styleCSS = styleCSS;
 exports.watch = watch;

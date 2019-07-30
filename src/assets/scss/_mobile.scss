@@ -73,8 +73,21 @@
       div.contact {
         div.card {
           flex-direction: column;
+
+          height: 750px;
         }
         form.contactForm {
+          div.fields {
+            display: flex;
+            justify-content: center;
+            div.field-half {
+              padding: 5px 0;
+            }
+            div.field {
+              margin: 0 auto;
+              padding: 5px 0;
+            }
+          }
           div.field {
             input#submitBtn {
               margin: auto;
@@ -158,7 +171,6 @@
       }
     }
     &#contact {
-      
       .contact-info {
         address {
           font-size: 1rem;

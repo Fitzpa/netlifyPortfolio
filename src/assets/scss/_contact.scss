@@ -20,11 +20,12 @@ section#contact {
           font-size: 1rem;
         }
         div.fields {
-          display: block;
+          display: flex;
+          flex-direction: column;
           div.field-half {
             border-radius: 1px;
             border: none;
-            padding: 5px 32px;
+            padding: 5px 0;
             width: 100%;
             input.inputField {
               display: block;
@@ -35,7 +36,7 @@ section#contact {
           div.field {
             border: none;
             border-radius: 3px;
-            padding: 5px 32px;
+            padding: 5px 0;
             width: 100%;
             font-size: 1rem;
             textarea {
@@ -62,11 +63,9 @@ section#contact {
           display: block;
           border-radius: 1px;
           border: none;
-          padding: 5px 32px;
+          padding: 5px 0;
           width: 100%;
           input#submitBtn {
-            display: block;
-            margin: 0;
             background: $dark-blue;
             color: $white;
             transition: all 0.5s;
@@ -133,42 +132,34 @@ section#contact {
       a.resumeParagraph {
         padding: 0.5rem 0;
         text-decoration: none;
+        color: $dark-blue;
         font-size: 1.5rem;
+        transition: all 0.5s;
+        &:hover {
+          color: $white;
+        }
       }
       a.mailBtnAnchor {
         padding: 0;
         display: flex;
         justify-content: center;
         margin: auto;
-        height: 4rem;
-        .iconCircle {
-          display: flex;
-          justify-content: center;
-          background: $blue-green;
-          margin: auto;
-          width: 2rem;
-          height: 2rem;
-          border-radius: 50%;
+        height: 4.5rem;
+
+        .mailBtnIcon {
           transition: all 0.5s;
-          .mailBtnIcon {
-            display: block;
-            width: 2rem;
-            height: auto;
-            margin: auto;
-            transition: all 0.5s;
-            filter: invert(9%) sepia(38%) saturate(504%) hue-rotate(168deg)
-              brightness(97%) contrast(93%);
-          }
+          margin: auto;
+          padding: 0;
+          width: 3rem;
+          height: auto;
+          filter: invert(9%) sepia(38%) saturate(504%) hue-rotate(168deg)
+            brightness(97%) contrast(93%);
         }
+
         &:hover {
-          .iconCircle {
-            background: $dark-blue;
-            width: 4rem;
-            height: 4rem;
-            .mailBtnIcon {
-              filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(157deg)
-                brightness(104%) contrast(103%);
-            }
+          .mailBtnIcon {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(157deg)
+              brightness(104%) contrast(103%);
           }
         }
       }
