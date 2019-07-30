@@ -12,6 +12,7 @@ section#contact {
       padding: 20px;
       background-color: $blue-green;
       form.contactForm {
+        color: $dark-blue;
         min-width: 50%;
         input {
           border: 2px solid $dark-blue;

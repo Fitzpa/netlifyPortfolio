@@ -1,0 +1,707 @@
+section#about {
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+section#about div#thumbnailDiv {
+  display: block;
+  margin: auto;
+  margin-bottom: 65px;
+  margin-top: 2rem;
+  width: 250px;
+  height: 250px;
+  background: url('../images/LouieSm.jpg');
+  border-radius: 50%;
+  border: solid 3px #fff;
+  z-index: 4;
+}
+section#about div.wrapper {
+  padding-bottom: 10px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+section#about div.wrapper div.resumeBody1 {
+  background-color: #7affd2;
+  color: #18212a;
+  border-right: 3px solid currentColor;
+  padding: 32px 32px 64px 32px;
+}
+section#about div.wrapper div.resumeBody1 div.resumeSkills {
+  padding: 10px;
+}
+section#about div.wrapper div.resumeBody1 div.resumeSkills h2 {
+  display: block;
+  font-size: 1.5rem;
+}
+section#about div.wrapper div.resumeBody1 div.resumeSkills ul {
+  padding-left: 32px;
+}
+section#about div.wrapper div.resumeBody1 div.resumeSkills ul li {
+  display: list-item;
+  list-style-type: square;
+  padding: 0.2rem 0;
+}
+section#about div.wrapper a {
+  background-color: #18212a;
+  color: #fff;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 3px;
+  margin: 2rem 0;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  font-size: 1rem;
+  justify-content: center;
+  max-width: 250px;
+  width: auto;
+  transition: all 0.5s;
+}
+section#about div.wrapper a:hover {
+  color: #18212a;
+  background-color: #fff;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+}
+section#about div.wrapper a:hover .resumeIcons {
+  filter: invert(9%) sepia(38%) saturate(504%) hue-rotate(168deg)
+    brightness(97%) contrast(93%);
+}
+section#about div.wrapper a.btn-resume {
+  display: flex;
+  flex-direction: column;
+}
+section#about div.wrapper a .resumeIcons {
+  transition: all 0.5s;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(157deg)
+    brightness(104%) contrast(103%);
+  width: 2.5rem;
+  height: auto;
+}
+section#about div.resumeBody2 {
+  background-color: #fff;
+  color: #18212a;
+  padding: 32px 32px 64px 32px;
+}
+section#about div.resumeBody2 div.resumeAbout {
+  padding: 10px;
+}
+section#about div.resumeBody2 div.resumeAbout h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+section#about div.resumeBody2 div.resumeAbout ul li {
+  list-style: square;
+  padding: 0.2rem 0;
+}
+section#about div.resumeBody2 div.educationContainer {
+  padding: 10px;
+}
+section#about div.resumeBody2 div.educationContainer h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+section#about div.resumeBody2 div.educationContainer ul li {
+  list-style: square;
+  padding: 0.2rem 0;
+}
+
+section#work {
+  margin: auto;
+  padding: 200px 0;
+}
+section#work div.card {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  border-radius: 3px;
+  padding: 20px;
+  background-color: #7affd2;
+}
+section#work div.card div.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+section#work div.card div.items div.item {
+  display: block;
+  flex: 25%;
+  padding: 15px;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+section#work div.card div.items div.item h3.item-title {
+  color: #18212a;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  min-height: 58px;
+}
+section#work div.card div.items div.item a.overlayContainer {
+  position: relative;
+  width: 50%;
+}
+section#work div.card div.items div.item a.overlayContainer:hover div.overlay {
+  opacity: 1;
+}
+section#work div.card div.items div.item a.overlayContainer img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+section#work div.card div.items div.item a.overlayContainer div.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000;
+  z-index: 3;
+}
+section#work
+  div.card
+  div.items
+  div.item
+  a.overlayContainer
+  div.overlay
+  div.text {
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+section#work div.card div.items div.item a.item-btn {
+  margin-top: 15px;
+  color: #fff;
+  background-color: #18212a;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s;
+  display: block;
+}
+section#work div.card div.items div.item a.item-btn .workIcons {
+  transition: all 0.5s;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(157deg)
+    brightness(104%) contrast(103%);
+  width: 2.5rem;
+  height: auto;
+}
+section#work div.card div.items div.item a.item-btn:hover {
+  background-color: #fff;
+  color: #18212a;
+  letter-spacing: 0.3rem;
+}
+section#work div.card div.items div.item a.item-btn:hover .workIcons {
+  filter: invert(9%) sepia(38%) saturate(504%) hue-rotate(168deg)
+    brightness(97%) contrast(93%);
+}
+
+section#contact div.contact {
+  width: 100%;
+  display: block;
+}
+section#contact div.contact div.card {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  border-radius: 2px;
+  display: flex;
+  padding: 20px;
+  background-color: #7affd2;
+}
+section#contact div.contact div.card form.contactForm {
+  color: #18212a;
+  min-width: 50%;
+}
+section#contact div.contact div.card form.contactForm input {
+  border: 2px solid #18212a;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+section#contact div.contact div.card form.contactForm div.fields {
+  display: flex;
+  flex-direction: column;
+}
+section#contact
+  div.contact
+  div.card
+  form.contactForm
+  div.fields
+  div.field-half {
+  border-radius: 1px;
+  border: none;
+  padding: 5px 0;
+  width: 100%;
+}
+section#contact
+  div.contact
+  div.card
+  form.contactForm
+  div.fields
+  div.field-half
+  input.inputField {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+}
+section#contact div.contact div.card form.contactForm div.fields div.field {
+  border: none;
+  border-radius: 3px;
+  padding: 5px 0;
+  width: 100%;
+  font-size: 1rem;
+}
+section#contact
+  div.contact
+  div.card
+  form.contactForm
+  div.fields
+  div.field
+  textarea {
+  border: 2px solid #18212a;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  font-size: 1.3rem;
+}
+section#contact
+  div.contact
+  div.card
+  form.contactForm
+  div.fields
+  div.field
+  input {
+  color: #18212a;
+  padding: 1rem 0;
+  display: block;
+  border: none;
+  font-size: 1rem;
+}
+section#contact
+  div.contact
+  div.card
+  form.contactForm
+  div.fields
+  div.field
+  div#roboCheck {
+  display: block;
+  margin: auto;
+}
+section#contact div.contact div.card form.contactForm div.field {
+  display: block;
+  border-radius: 1px;
+  border: none;
+  padding: 5px 0;
+  width: 100%;
+}
+section#contact
+  div.contact
+  div.card
+  form.contactForm
+  div.field
+  input#submitBtn {
+  background: #18212a;
+  color: #fff;
+  transition: all 0.5s;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+}
+section#contact
+  div.contact
+  div.card
+  form.contactForm
+  div.field
+  input#submitBtn:hover {
+  color: #18212a;
+  background: #fff;
+  font-weight: bold;
+}
+
+section#contact div.contact-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 50%;
+  height: 136px;
+  margin: auto;
+  color: #18212a;
+  text-align: center;
+}
+section#contact div.contact-information-icons {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+section#contact div.contact-information-icons a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  transition: all 0.5s;
+  color: #18212a;
+}
+section#contact div.contact-information-icons a .contactIcons {
+  transition: all 0.5s;
+  filter: invert(9%) sepia(38%) saturate(504%) hue-rotate(168deg)
+    brightness(97%) contrast(93%);
+  width: 3.2rem;
+  height: auto;
+}
+section#contact div.contact-information-icons a:hover {
+  color: #fff;
+}
+section#contact div.contact-information-icons a:hover .contactIcons {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(157deg)
+    brightness(104%) contrast(103%);
+}
+section#contact div.contact-information .contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section#contact div.contact-information .contact-info address {
+  padding: 0.5rem 0;
+  display: block;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #18212a;
+  text-align: center;
+}
+section#contact div.contact-information .contact-info a.resumeParagraph {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #18212a;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+}
+section#contact div.contact-information .contact-info a.resumeParagraph:hover {
+  color: #fff;
+}
+section#contact div.contact-information .contact-info a.mailBtnAnchor {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 4.5rem;
+}
+section#contact
+  div.contact-information
+  .contact-info
+  a.mailBtnAnchor
+  .mailBtnIcon {
+  transition: all 0.5s;
+  margin: auto;
+  padding: 0;
+  width: 3rem;
+  height: auto;
+  filter: invert(9%) sepia(38%) saturate(504%) hue-rotate(168deg)
+    brightness(97%) contrast(93%);
+}
+section#contact
+  div.contact-information
+  .contact-info
+  a.mailBtnAnchor:hover
+  .mailBtnIcon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(157deg)
+    brightness(104%) contrast(103%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  z-index: 5;
+  background: #000;
+  border-bottom: 3px solid #fff;
+}
+.navbar div {
+  padding-left: 32px;
+}
+.navbar div h2 {
+  min-width: 292px;
+  height: 100%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 100%;
+  padding-left: 32px;
+}
+.navbar ul li {
+  margin: 0 2rem;
+  padding: 1rem;
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  color: #fff;
+}
+.navbar ul li a:hover {
+  color: #7affd2;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+main {
+  padding: 65px 20px 20px 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: auto;
+}
+main:not(:first-child) {
+  padding-top: 0 !important;
+}
+main:last-child {
+  padding-bottom: 0 !important;
+}
+
+header {
+  color: #fff;
+  padding: 30px;
+  width: 50%;
+  min-width: 290px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+}
+header:before {
+  content: '';
+  background-color: #18212a;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+header:after {
+  content: '';
+  background-color: #7affd2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: -3;
+}
+header h2 {
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: bold;
+}
+header h3 {
+  font-size: 1.17rem;
+  font-weight: 100;
+  min-height: 58px;
+}
+
+@media (max-width: 559px) {
+  .g-recaptcha div {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 687px) {
+  .hide-sm {
+    display: none;
+  }
+  .container {
+    margin-top: 8rem;
+  }
+  .x-large {
+    font-size: 3rem;
+  }
+  .large {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  section#about {
+    padding-top: 80px;
+  }
+  section#about div#thumbnailDiv {
+    display: block;
+    margin: auto;
+    margin-bottom: 65px;
+    margin-top: 5rem;
+    border: solid 2px #fff;
+    background: url('../images/LouieXSm.jpg');
+    width: 145px;
+    height: 145px;
+  }
+  section#about div.wrapper {
+    padding-bottom: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  section#about div.wrapper div.resumeBody1 {
+    width: 100%;
+    background-color: #7affd2;
+    color: #18212a;
+    border-right: none;
+    border-bottom: 4px solid currentColor;
+    padding: 32px 32px 64px 32px;
+  }
+  section#work div.card div.items {
+    flex-direction: column;
+  }
+  section#contact div.contact div.card {
+    flex-direction: column;
+    height: 750px;
+  }
+  section#contact div.contact form.contactForm div.fields {
+    display: flex;
+    justify-content: center;
+  }
+  section#contact div.contact form.contactForm div.fields div.field-half {
+    padding: 5px 0;
+  }
+  section#contact div.contact form.contactForm div.fields div.field {
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+  section#contact div.contact form.contactForm div.field input#submitBtn {
+    margin: auto;
+  }
+  section#contact div.contact-information {
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+  section#contact div.contact-information-icons {
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+  section#contact div.contact-information-icons a .contactIcons {
+    width: 2.5rem;
+  }
+  section#contact div.contact-information .contact-info address {
+    font-size: 1rem;
+  }
+  section#contact div.contact-information .contact-info a.resumeParagraph {
+    font-size: 1rem;
+  }
+  section#contact div.contact-information .contact-info p.resumeParagraph {
+    font-size: 1rem;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 110px;
+    background: black;
+  }
+  .navbar div {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+  }
+  .navbar div h2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+  .navbar ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 688px) and (max-width: 752px) {
+  section#work div.card div.items {
+    flex-direction: row;
+  }
+  section#work div.card div.items div.item {
+    display: block;
+    flex: auto;
+    width: 50%;
+  }
+  section#contact .contact-info address {
+    font-size: 1rem;
+  }
+  section#contact .contact-info a.resumeParagraph {
+    font-size: 1rem;
+  }
+  section#contact .contact-info p.resumeParagraph {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 806px) {
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+  }
+  .navbar ul li {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar ul li a {
+    margin: auto 0;
+  }
+}
