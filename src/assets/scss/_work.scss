@@ -1,0 +1,103 @@
+section#work {
+  margin: auto;
+  padding: 200px 0;
+
+  div.card {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+    border-radius: 3px;
+    padding: 20px;
+    background-color: $blue-green;
+    div.items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      div.item {
+        display: block;
+        flex: 25%;
+        padding: 15px;
+        padding-bottom: 2rem;
+        text-align: center;
+
+        h3.item-title {
+          color: $dark-blue;
+          margin: 0;
+          font-size: 1.5rem;
+          line-height: 1;
+          min-height: 58px;
+        }
+        a {
+          &.overlayContainer {
+            position: relative;
+            width: 50%;
+            &:hover {
+              div.overlay {
+                opacity: 1;
+              }
+            }
+            img {
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+            div.overlay {
+              position: absolute;
+              top: 0;
+              bottom: 20px;
+              left: 0;
+              right: 0;
+              height: 100%;
+              width: 100%;
+              opacity: 0;
+              transition: 0.5s ease;
+              background-color: #000;
+              z-index: 3;
+              div.text {
+                width: 100%;
+                color: white;
+                background: rgba(0, 0, 0, 0.8);
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+              }
+            }
+          }
+
+          &.item-btn {
+            margin-top: 15px;
+            color: $white;
+            background-color: $dark-blue;
+            padding: 0.7rem;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 3px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.5s;
+            display: block;
+            .workIcons {
+              transition: all 0.5s;
+              filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(157deg) brightness(104%) contrast(103%);
+              width: 2.5rem;
+              height: auto;
+            }
+            &:hover {
+              background-color: $white;
+              color: $dark-blue;
+              letter-spacing: 0.3rem;
+              .workIcons {
+                filter: invert(9%) sepia(38%) saturate(504%) hue-rotate(168deg) brightness(97%) contrast(93%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

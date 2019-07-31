@@ -1,0 +1,168 @@
+section#contact {
+  div.contact {
+    width: 100%;
+    display: block;
+
+    div.card {
+      width: 100%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: all 0.5s;
+      border-radius: 2px;
+      display: flex;
+      padding: 20px;
+      background-color: $blue-green;
+      form.contactForm {
+        min-width: 50%;
+        input {
+          border: 2px solid $dark-blue;
+          padding: 10px;
+          border-radius: 3px;
+          font-size: 1rem;
+        }
+        div.fields {
+          display: flex;
+          flex-direction: column;
+          div.field-half {
+            border-radius: 1px;
+            border: none;
+            padding: 5px 0;
+            width: 100%;
+            input.inputField {
+              display: block;
+              width: 100%;
+              font-size: 1rem;
+            }
+          }
+          div.field {
+            border: none;
+            border-radius: 3px;
+            padding: 5px 0;
+            width: 100%;
+            font-size: 1rem;
+            textarea {
+              border: 2px solid $dark-blue;
+              padding: 10px;
+              display: block;
+              width: 100%;
+              font-size: 1.3rem;
+            }
+            input {
+              color: $dark-blue;
+              padding: 1rem 0;
+              display: block;
+              border: none;
+              font-size: 1rem;
+            }
+            div#roboCheck {
+              display: block;
+              margin: auto;
+            }
+          }
+        }
+        div.field {
+          display: block;
+          border-radius: 1px;
+          border: none;
+          padding: 5px 0;
+          width: 100%;
+          input#submitBtn {
+            background: $dark-blue;
+            color: $white;
+            transition: all 0.5s;
+            display: block;
+            padding: 0.5rem 1rem;
+            border: 0;
+            &:hover {
+              color: $dark-blue;
+              background: $white;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  div.contact-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 50%;
+    height: 136px;
+    margin: auto;
+    color: $dark-blue;
+    text-align: center;
+    &-icons {
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-evenly;
+      a {
+        font-size: 1.7rem;
+        text-decoration: none;
+        transition: all 0.5s;
+        color: $dark-blue;
+        .contactIcons {
+          transition: all 0.5s;
+          filter: invert(9%) sepia(38%) saturate(504%) hue-rotate(168deg)
+            brightness(97%) contrast(93%);
+
+          width: 3.2rem;
+          height: auto;
+        }
+        &:hover {
+          color: $white;
+          .contactIcons {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(157deg)
+              brightness(104%) contrast(103%);
+          }
+        }
+      }
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      address {
+        padding: 0.5rem 0;
+        display: block;
+        font-style: italic;
+        font-size: 1.5rem;
+        color: $dark-blue;
+        text-align: center;
+      }
+      a.resumeParagraph {
+        padding: 0.5rem 0;
+        text-decoration: none;
+        color: $dark-blue;
+        font-size: 1.5rem;
+        transition: all 0.5s;
+        &:hover {
+          color: $white;
+        }
+      }
+      a.mailBtnAnchor {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        height: 4.5rem;
+
+        .mailBtnIcon {
+          transition: all 0.5s;
+          margin: auto;
+          padding: 0;
+          width: 3rem;
+          height: auto;
+          filter: invert(9%) sepia(38%) saturate(504%) hue-rotate(168deg)
+            brightness(97%) contrast(93%);
+        }
+
+        &:hover {
+          .mailBtnIcon {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(157deg)
+              brightness(104%) contrast(103%);
+          }
+        }
+      }
+    }
+  }
+}

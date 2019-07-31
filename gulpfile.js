@@ -3,40 +3,37 @@ const cleanCSS = require("gulp-clean-css");
 const htmlmin = require("gulp-htmlmin");
 const imagemin = require("gulp-imagemin");
 const uglify = require("gulp-uglify");
-const concat = require("gulp-concat");
 const sass = require("gulp-sass");
-const prettier = require("gulp-prettier");
 const browserSync = require("browser-sync").create();
 
 // Minify CSS
 function minifyCSS() {
   return gulp
-    .src("./src/public/assets/css/**/*.css")
+    .src("./dist/src/assets/css")
     .pipe(cleanCSS({ compatibility: "ie8" }))
-    .pipe(gulp.dest("./build/src/public/assets/css"));
+    .pipe(gulp.dest("./dist/src/assets/css"));
 }
 
 // Compile Sass & Inject Into Browser
 function style() {
   return gulp
-    .src("./src/public/assets/scss/**/*.scss")
-    .pipe(sass())
-    .pipe(prettier({ singleQuote: true }))
-    .pipe(gulp.dest("./src/public/assets/css"));
+    .src("./src/assets/scss/**/*.scss")
+    .pipe(sass({ outputStyle: "compressed" }))
+    .pipe(gulp.dest("./dist/src/assets/css"));
 }
 
-// Minify HTML/Handlebars
+// Minify HTML
 function minifyHTML() {
   return gulp
-    .src("./src/views/**/*.handlebars")
+    .src("./src/**/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("./build/src/views"));
+    .pipe(gulp.dest("./dist/src"));
 }
 
 // Minify Images
 function minifyImages() {
   return gulp
-    .src("./src/public/assets/images/*")
+    .src("./src/assets/images/*")
     .pipe(
       imagemin([
         imagemin.jpegtran({ progressive: true }),
@@ -46,33 +43,32 @@ function minifyImages() {
         })
       ])
     )
-    .pipe(gulp.dest("build/src/public/assets/images"));
+    .pipe(gulp.dest("dist/src/assets/images"));
 }
 
 // Uglify JS
 function uglifyJS() {
   return gulp
-    .src("./src/**/*.js")
-    .pipe(concat('app.js'))
+    .src("/src/**/*.js")
     .pipe(uglify())
-    .pipe(gulp.dest("./build/src"));
+    .pipe(gulp.dest("dist"));
 }
 
 // Watch Sass & Serve
 function watch() {
   browserSync.init({
     server: {
-      baseDir: "./dev/src"
+      baseDir: "./dist/src"
     }
   });
 
   gulp.watch("./src/assets/scss/**/*.scss", style);
-  gulp.watch("./build/src/assets/css", minifyCSS);
+  gulp.watch("./dist/src/assets/css", minifyCSS);
   gulp.watch("./src/**/*.html", minifyHTML);
   gulp.watch("./src/**/*.js", uglifyJS);
-  gulp.watch("./build/src/*.html").on("change", browserSync.reload);
-  gulp.watch("./build/src/assets/css").on("change", browserSync.reload);
-  gulp.watch("./build/src/js/**/*.js").on("change", browserSync.reload);
+  gulp.watch("./dist/src/*.html").on("change", browserSync.reload);
+  gulp.watch("./dist/src/assets/css").on("change", browserSync.reload);
+  gulp.watch("./dist/src/js/**/*.js").on("change", browserSync.reload);
 }
 
 // Default Task
